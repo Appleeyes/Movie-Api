@@ -6,6 +6,7 @@ use Slim\Factory\AppFactory;
 use DI\Container;
 use MovieApi\App\Database;
 
+use Slim\Routing\RouteCollectorProxy;
 
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -22,11 +23,13 @@ $container->set('connection', function () {
     return $db->connection;
 });
 
-$app->get('/v1/movies', '\MovieApi\Controllers\MovieController:indexAction');
-$app->post('/v1/movies', '\MovieApi\Controllers\MovieController:createAction');
-$app->put('/v1/movies/{id}', '\MovieApi\Controllers\MovieController:updateAction');
-$app->get('/v1/movies/{id}', '\MovieApi\Controllers\MovieController:deleteAction');
+$app->group('/v1', function (RouteCollectorProxy $group) {
+    $group->get('/v1/movies', '\MovieApi\Controllers\MovieController:indexAction');
+    $group->post('/v1/movies', '\MovieApi\Controllers\MovieController:createAction');
+    $group->put('/v1/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:updateAction');
+    $group->delete('/v1/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:deleteAction');
+    $group->get('/v1/posts/fake-data', '\MovieApi\Controllers\PostController:faker');
+});
 
-$app->get('/v1/posts/fake-data', '\MovieApi\Controllers\PostController:faker');
 
 $app->run();
