@@ -19,4 +19,24 @@ class E_Controller extends A_Controller
         $middleware->logResponse($response);
         return $response;
     }
+
+    public function indexAction(Request $request, Response $response): Response
+    {
+        return ($response);
+    }
+
+    public function createAction(Request $request, Response $response): Response
+    {
+        return ($response);
+    }
+
+    public function updateAction(Request $request, Response $response, $args = []): Response
+    {
+        return ($response);
+    }
+
+    public function deleteAction(Request $request, Response $response, $args = []): Response
+    {
+        return ($response);
+    }
 }
