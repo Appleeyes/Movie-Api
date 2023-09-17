@@ -2,10 +2,13 @@
 
 use Dotenv\Dotenv;
 use Slim\Factory\AppFactory;
-
+use Slim\Psr7\Request;
+use Slim\Psr7\Response;
 use DI\Container;
 use MovieApi\App\Database;
-
+use BlogApi\Controllers\ExceptionController;
+use BlogApi\Middleware\MiddlewareAfter;
+use BlogApi\Middleware\MiddlewareBefore;
 use Slim\Routing\RouteCollectorProxy;
 
 
