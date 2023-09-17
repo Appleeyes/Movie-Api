@@ -1,0 +1,15 @@
+URI: http://localhost:3000/v1/movies/fake-data
+HEADERS: {"Host":["localhost"],"Content-Type":["application\/x-www-form-urlencoded"],"User-Agent":["insomnia\/2023.5.8"],"Accept":["*\/*"],"Content-Length":["161"]}
+BODY: author_id=3928&title=updateTtle&image=http%3A%5C%2F%5C%2Florempixel.com%5C%2F200%5C%2F150%5C%2Fcats%5C%2F%3F85956&content=ipsam+consequuntur+consequatur+aut+esse
+
+
+URI: http://localhost:3000/v1/movies/fake-data
+HEADERS: {"Host":["localhost"],"Content-Type":["application\/x-www-form-urlencoded"],"User-Agent":["insomnia\/2023.5.8"],"Accept":["*\/*"],"Content-Length":["161"]}
+BODY: author_id=3928&title=updateTtle&image=http%3A%5C%2F%5C%2Florempixel.com%5C%2F200%5C%2F150%5C%2Fcats%5C%2F%3F85956&content=ipsam+consequuntur+consequatur+aut+esse
+
+
+URI: http://localhost:3000/v1/movies/fake-data
+HEADERS: {"Host":["localhost"],"Content-Type":["application\/x-www-form-urlencoded"],"User-Agent":["insomnia\/2023.5.8"],"Accept":["*\/*"],"Content-Length":["161"]}
+BODY: author_id=3928&title=updateTtle&image=http%3A%5C%2F%5C%2Florempixel.com%5C%2F200%5C%2F150%5C%2Fcats%5C%2F%3F85956&content=ipsam+consequuntur+consequatur+aut+esse
+
+

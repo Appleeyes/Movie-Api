@@ -26,11 +26,11 @@ $container->set('connection', function () {
 });
 
 $app->group('/v1', function (RouteCollectorProxy $group) {
-    $group->get('/v1/movies', '\MovieApi\Controllers\MovieController:indexAction');
-    $group->post('/v1/movies', '\MovieApi\Controllers\MovieController:createAction');
-    $group->put('/v1/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:updateAction');
-    $group->delete('/v1/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:deleteAction');
-    $group->get('/v1/posts/fake-data', '\MovieApi\Controllers\PostController:faker');
+    $group->get('/movies', '\MovieApi\Controllers\MovieController:indexAction');
+    $group->post('/movies', '\MovieApi\Controllers\MovieController:createAction');
+    $group->put('/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:updateAction');
+    $group->delete('/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:deleteAction');
+    $group->get('/movies/fake-data', '\MovieApi\Controllers\MovieController:faker');
 })->add(new MiddlewareBefore())->add(new MiddlewareAfter());
 
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);

@@ -15,7 +15,7 @@ abstract class A_Model
 
     abstract function update(array $data): void;
 
-    abstract function insert(array $data): int;
+    abstract function insert(array $data): void;
 
     abstract function delete(int $id): bool;
 

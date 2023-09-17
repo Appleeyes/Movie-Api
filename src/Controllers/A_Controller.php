@@ -15,6 +15,13 @@ abstract class A_Controller
         $this->container = $container;
     }
 
+    protected function render(array $data, Response $response): Response
+    {
+        $payload = json_encode($data, JSON_PRETTY_PRINT);
+        $response->getBody()->write($payload);
+        return $response->withHeader('Content-Type', 'application/json');
+    }
+
     abstract function indexAction(Request $request, Response $response): Response;
 
     abstract function createAction(Request $request, Response $response): Response;
