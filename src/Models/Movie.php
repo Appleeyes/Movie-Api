@@ -53,6 +53,21 @@ class Movie extends A_Model
         return $movies;
     }
 
+    public function findSortedAndPaginated($page, $numberPerPage, $fieldToSort)
+    {
+        $offset = ($page - 1) * $numberPerPage;
+        $sql = "SELECT * FROM " . $this->dbTableName . " ORDER BY $fieldToSort LIMIT :limit OFFSET :offset";
+
+        $pdo = $this->getPdo();
+        $stm = $pdo->prepare($sql);
+        $stm->bindParam(':limit', $numberPerPage, \PDO::PARAM_INT);
+        $stm->bindParam(':offset', $offset, \PDO::PARAM_INT);
+        $stm->execute();
+
+        $movies = $stm->fetchAll(\PDO::FETCH_ASSOC);
+        return $movies;
+    }
+
     public function update(array $data): bool
     {
         $sql = "UPDATE " . $this->dbTableName . " SET title=?, year=?, released=?, runtime=?, genre=?, director=?, actors=?, country=?, poster=?, imdb=?, type=? WHERE id=?";

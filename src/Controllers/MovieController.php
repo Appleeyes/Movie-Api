@@ -32,6 +32,60 @@ class MovieController extends A_Controller
         return $this->render($parsedBody, $response);
     }
 
+    public function sortAction(Request $request, Response $response, $args = [])
+    {
+        $numberPerPage = $args['numberPerPage'];
+        $fieldToSort = $args['fieldToSort'];
+
+        $page = 1;
+
+        // Create an instance of the Movie model.
+        $movies = new Movie($this->container);
+
+        // Implement sorting logic based on $fieldToSort.
+        $sqlField = '';
+        $sortOrder = 'ASC';
+
+        switch ($fieldToSort) {
+            case 'title':
+                $sqlField = 'title';
+                break;
+            case 'year':
+                $sqlField = 'year';
+                break;
+            case 'imdb':
+                $sqlField = 'imdb';
+                break;
+            case 'director':
+                $sqlField = 'director';
+                break;
+            case 'runtime':
+                $sqlField = 'runtime';
+                break;
+            case 'released':
+                $sqlField = 'released';
+                break;
+            case 'type':
+                $sqlField = 'type';
+                break;
+            case 'genre':
+                $sqlField = 'genre';
+                break;
+            case 'actors':
+                $sqlField = 'actors';
+                break;
+            default:
+                $responseStatus = [
+                    'status' => StatusCodeInterface::STATUS_BAD_REQUEST,
+                    'message' => 'Invalid field'
+                ];
+                return $this->render($responseStatus, $response);
+                break;
+        }
+        $parsedBody = $movies->findSortedAndPaginated($page, $numberPerPage, $fieldToSort);
+
+        return $this->render($parsedBody, $response);
+    }
 
     public function createAction(Request $request, Response $response): Response
     {

@@ -31,6 +31,7 @@ $app->add(MethodOverrideMiddleware::class);
 $app->group('/v1', function (RouteCollectorProxy $group) {
     $group->get('/movies', '\MovieApi\Controllers\MovieController:indexAction');
     $group->get('/movies/{numberPerPage}', '\MovieApi\Controllers\MovieController:paginateAction');
+    $group->get('/movies/{numberPerPage}/sort/{fieldToSort}', '\MovieApi\Controllers\MovieController:sortAction');
     $group->post('/movies', '\MovieApi\Controllers\MovieController:createAction');
     $group->put('/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:updateAction');
     $group->delete('/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:deleteAction');
