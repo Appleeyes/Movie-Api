@@ -13,7 +13,9 @@ class MovieController extends A_Controller
 
     public function indexAction(Request $request, Response $response): Response
     {
-        return ($response);
+        $movies = new Movie($this->container);
+        $data = $movies->findAll();
+        return $this->render($data, $response);
     }
 
     public function createAction(Request $request, Response $response): Response

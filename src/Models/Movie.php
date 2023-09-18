@@ -18,13 +18,17 @@ class Movie extends A_Model
     public string $actor;
     public string $country;
     public string $poster;
-    public string $imbd;
+    public float $imbd;
     public string $type;
     private string $dbTableName = 'movies';
 
     public function findAll(): array
     {
-        return [];
+        $sql = "SELECT * FROM " . $this->dbTableName;
+        $stm = $this->getPdo()->prepare($sql);
+        $stm->execute();
+        $movies = $stm->fetchAll();
+        return $movies;
     }
 
     public function findById(): array
