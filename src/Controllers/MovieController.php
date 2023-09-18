@@ -141,8 +141,14 @@ class MovieController extends A_Controller
 
     public function deleteAction(Request $request, Response $response, $args = []): Response
     {
-        return ($response);
-    }
+        $id = $args['id'];
+        $movies = new Movie($this->container);
+        $movies->delete($id);
+        $responseData = [
+            'status' => StatusCodeInterface::STATUS_OK,
+            'message' => 'Movie deleted successfully'
+        ];
+        return $this->render($responseData, $response);    }
 
     function faker(Request $Request, Response $response): Response
     {

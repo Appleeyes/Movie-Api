@@ -205,3 +205,43 @@ HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max
 BODY: 
 
 
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["152"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&director=Apple&actors=Dan%2C+Dav&country=Ghana&poster=nil&imdb=nil&type=nil
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["152"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&director=Apple&actors=Dan%2C+Dav&country=Ghana&poster=nil&imdb=nil&type=nil
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies/218
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["152"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&director=Apple&actors=Dan%2C+Dav&country=Ghana&poster=nil&imdb=nil&type=nil
+
+
+URI: http://localhost:3000/v1/movies/218
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["152"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&director=Apple&actors=Dan%2C+Dav&country=Ghana&poster=nil&imdb=nil&type=nil
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+

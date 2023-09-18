@@ -65,7 +65,14 @@ class Movie extends A_Model
 
     public function delete(int $id): bool
     {
-        return '';
+        $sql = "DELETE FROM " . $this->dbTableName . " WHERE id=?";
+        try {
+            $stm = $this->getPdo()->prepare($sql);
+            $stm->execute([$id]);
+        } catch (\PDOException $exception) {
+            return false;
+        }
+        return true;
     }
 
     function fakeData(): bool
