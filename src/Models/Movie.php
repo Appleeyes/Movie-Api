@@ -37,11 +37,17 @@ class Movie extends A_Model
         return ;
     }
 
-    public function insert(array $data): void
+    public function insert(array $data): bool
     {
         $sql = "INSERT INTO " . $this->dbTableName . " (title, year, released, runtime, genre, director, actors, country, poster, imdb, type) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
         $stm = $this->getPdo()->prepare($sql);
-        $stm->execute([$data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7], $data[8], $data[9], $data[10]]);
+        try {
+            $result = $stm->execute([$data[0], $data[1], $data[2], $data[3], $data[4], $data[5], $data[6], $data[7], $data[8], $data[9], $data[10]]);
+            return $result;
+        } catch (\PDOException $e) {
+            error_log("Database error: " . $e->getMessage());
+            throw $e;
+        }
     }
 
     public function delete(int $id): bool

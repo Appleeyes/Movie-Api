@@ -19,6 +19,7 @@ abstract class A_Controller
     {
         $payload = json_encode($data, JSON_PRETTY_PRINT);
         $response->getBody()->write($payload);
+        error_log("Response payload: " . $payload);
         return $response->withHeader('Content-Type', 'application/json');
     }
 

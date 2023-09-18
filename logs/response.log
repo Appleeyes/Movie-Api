@@ -1,16 +1,16 @@
 STATUS CODE: 200
-HEADERS: []
+HEADERS: {"Content-Type":["application\/json"]}
 BODY: {
-    "status": 404,
-    "message": "not found"
+    "status": 201,
+    "message": "Movie added successfully"
 }
 
 
 STATUS CODE: 200
 HEADERS: {"Content-Type":["application\/json"]}
 BODY: {
-    "status": 200,
-    "message": "Fake data generated successfully"
+    "status": 201,
+    "message": "Movie added successfully"
 }
 
 

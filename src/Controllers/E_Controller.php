@@ -14,11 +14,12 @@ class E_Controller extends A_Controller
         $middleware = new MiddlewareAfter();
         $payload = json_encode(['status' => 404, 'message' => 'not found'], JSON_PRETTY_PRINT);
         $response->getBody()->write($payload);
-        $response->withStatus(StatusCodeInterface::STATUS_NOT_FOUND);
-        $response->withHeader('Content-Type', 'application/json');
+        $response = $response->withStatus(StatusCodeInterface::STATUS_NOT_FOUND); // Assign the new response object
+        $response = $response->withHeader('Content-Type', 'application/json'); // Assign the new response object
         $middleware->logResponse($response);
         return $response;
     }
+
 
     public function indexAction(Request $request, Response $response): Response
     {
