@@ -8,6 +8,7 @@ use Slim\Psr7\Request;
 use Slim\Psr7\Response;
 
 
+
 class MovieController extends A_Controller
 {
 
@@ -17,6 +18,20 @@ class MovieController extends A_Controller
         $parsedBody = $movies->findAll();
         return $this->render($parsedBody, $response);
     }
+
+    public function paginateAction(Request $request, Response $response, $args = [])
+    {
+        $numberPerPage = $args['numberPerPage'];
+
+        // Use array indexing to access the 'page' query parameter.
+        $page = 1;
+
+        $movies = new Movie($this->container);
+        $parsedBody = $movies->findByPagination($page, $numberPerPage);
+
+        return $this->render($parsedBody, $response);
+    }
+
 
     public function createAction(Request $request, Response $response): Response
     {

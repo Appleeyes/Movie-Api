@@ -460,3 +460,43 @@ HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max
 BODY: 
 
 
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/3
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/3
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+

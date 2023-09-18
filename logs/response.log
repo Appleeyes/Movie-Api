@@ -19502,3 +19502,95 @@ BODY: [
 ]
 
 
+STATUS CODE: 200
+HEADERS: {"Content-Type":["application\/json"]}
+BODY: [
+    {
+        "id": 52,
+        "title": "distinctio magni",
+        "year": "1980",
+        "released": "0000-00-00",
+        "runtime": "254",
+        "genre": "itaque",
+        "director": "Jerel Price",
+        "actors": "Prof. Jerrell VonRueden Sr., Flo Kshlerin, Maeve Hane",
+        "country": "Comoros",
+        "poster": "http:\/\/lorempixel.com\/200\/150\/?54056",
+        "imdb": "6.7",
+        "type": "sequi",
+        "created_at": "2023-09-17 20:56:08",
+        "updated_at": "2023-09-17 20:56:08"
+    },
+    {
+        "id": 53,
+        "title": "sapiente et",
+        "year": "1970",
+        "released": "0000-00-00",
+        "runtime": "89",
+        "genre": "consequatur",
+        "director": "Mason Hills",
+        "actors": "Brooke West, Monique Pfannerstill, Amber Mosciski II",
+        "country": "Monaco",
+        "poster": "http:\/\/lorempixel.com\/200\/150\/?39033",
+        "imdb": "2.8",
+        "type": "accusantium",
+        "created_at": "2023-09-17 20:56:08",
+        "updated_at": "2023-09-17 20:56:08"
+    }
+]
+
+
+STATUS CODE: 200
+HEADERS: {"Content-Type":["application\/json"]}
+BODY: [
+    {
+        "id": 52,
+        "title": "distinctio magni",
+        "year": "1980",
+        "released": "0000-00-00",
+        "runtime": "254",
+        "genre": "itaque",
+        "director": "Jerel Price",
+        "actors": "Prof. Jerrell VonRueden Sr., Flo Kshlerin, Maeve Hane",
+        "country": "Comoros",
+        "poster": "http:\/\/lorempixel.com\/200\/150\/?54056",
+        "imdb": "6.7",
+        "type": "sequi",
+        "created_at": "2023-09-17 20:56:08",
+        "updated_at": "2023-09-17 20:56:08"
+    },
+    {
+        "id": 53,
+        "title": "sapiente et",
+        "year": "1970",
+        "released": "0000-00-00",
+        "runtime": "89",
+        "genre": "consequatur",
+        "director": "Mason Hills",
+        "actors": "Brooke West, Monique Pfannerstill, Amber Mosciski II",
+        "country": "Monaco",
+        "poster": "http:\/\/lorempixel.com\/200\/150\/?39033",
+        "imdb": "2.8",
+        "type": "accusantium",
+        "created_at": "2023-09-17 20:56:08",
+        "updated_at": "2023-09-17 20:56:08"
+    },
+    {
+        "id": 54,
+        "title": "rerum odit",
+        "year": "1998",
+        "released": "0000-00-00",
+        "runtime": "30",
+        "genre": "architecto",
+        "director": "Marie Schneider I",
+        "actors": "Mrs. Virginie Blanda V, Kurt White, Ray Glover",
+        "country": "Myanmar",
+        "poster": "http:\/\/lorempixel.com\/200\/150\/?62516",
+        "imdb": "7.5",
+        "type": "voluptas",
+        "created_at": "2023-09-17 20:56:08",
+        "updated_at": "2023-09-17 20:56:08"
+    }
+]
+
+

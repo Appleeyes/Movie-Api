@@ -30,11 +30,12 @@ $app->add(MethodOverrideMiddleware::class);
 
 $app->group('/v1', function (RouteCollectorProxy $group) {
     $group->get('/movies', '\MovieApi\Controllers\MovieController:indexAction');
+    $group->get('/movies/{numberPerPage}', '\MovieApi\Controllers\MovieController:paginateAction');
     $group->post('/movies', '\MovieApi\Controllers\MovieController:createAction');
     $group->put('/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:updateAction');
     $group->delete('/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:deleteAction');
     $group->patch('/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:patchAction');
-    $group->get('/movies/fake-data', '\MovieApi\Controllers\MovieController:faker');
+    // $group->get('/movies/fake-data', '\MovieApi\Controllers\MovieController:faker');
 })->add(new MiddlewareBefore())->add(new MiddlewareAfter());
 
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);

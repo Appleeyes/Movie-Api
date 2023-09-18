@@ -31,9 +31,26 @@ class Movie extends A_Model
         return $movies;
     }
 
-    public function findById(): array
+    public function findByPagination($page, $numberPerPage): array
     {
-        return [];
+        $offset = ($page - 1) * $numberPerPage;
+        $sql = "SELECT * FROM " . $this->dbTableName . " LIMIT :limit OFFSET :offset";
+
+        $pdo = $this->getPdo();
+        $stm = $pdo->prepare($sql);
+
+        // Create separate variables to hold the values.
+        $limitValue = $numberPerPage;
+        $offsetValue = $offset;
+
+        // Bind the separate variables to the statement.
+        $stm->bindParam(':limit', $limitValue, \PDO::PARAM_INT);
+        $stm->bindParam(':offset', $offsetValue, \PDO::PARAM_INT);
+
+        $stm->execute();
+
+        $movies = $stm->fetchAll(\PDO::FETCH_ASSOC);
+        return $movies;
     }
 
     public function update(array $data): bool

@@ -11,7 +11,8 @@ abstract class A_Model
 
     abstract function findAll(): array;
 
-    abstract function findById(): array;
+    abstract function
+    findByPagination($page, $numberPerPage): array;
 
     abstract function update(array $data): bool;
 
