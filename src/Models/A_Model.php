@@ -13,7 +13,7 @@ abstract class A_Model
 
     abstract function findById(): array;
 
-    abstract function update(array $data): void;
+    abstract function update(array $data): bool;
 
     abstract function insert(array $data): bool;
 
