@@ -9,6 +9,7 @@ use MovieApi\Controllers\E_Controller;
 use MovieApi\Middleware\MiddlewareAfter;
 use MovieApi\Middleware\MiddlewareBefore;
 use Slim\Routing\RouteCollectorProxy;
+use Slim\Middleware\MethodOverrideMiddleware;
 
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -24,6 +25,8 @@ $container->set('connection', function () {
     $db = new Database();
     return $db->connection;
 });
+
+$app->add(MethodOverrideMiddleware::class);
 
 $app->group('/v1', function (RouteCollectorProxy $group) {
     $group->get('/movies', '\MovieApi\Controllers\MovieController:indexAction');

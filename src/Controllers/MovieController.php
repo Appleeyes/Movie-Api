@@ -4,9 +4,9 @@ namespace MovieApi\Controllers;
 
 use MovieApi\Models\Movie;
 use Fig\Http\Message\StatusCodeInterface;
-use MovieApi\Models\Movies;
 use Slim\Psr7\Request;
 use Slim\Psr7\Response;
+
 
 class MovieController extends A_Controller
 {
@@ -14,63 +14,50 @@ class MovieController extends A_Controller
     public function indexAction(Request $request, Response $response): Response
     {
         $movies = new Movie($this->container);
-        $data = $movies->findAll();
-        return $this->render($data, $response);
+        $parsedBody = $movies->findAll();
+        return $this->render($parsedBody, $response);
     }
 
     public function createAction(Request $request, Response $response): Response
     {
-        $contentType = $request->getHeaderLine('Content-Type');
-        $parseddata = $request->getParsedBody();
+        if ($request->getHeaderLine('Content-Type') === 'application/json') {
+            $jsonBody = json_decode($request->getBody(), true);
 
-        switch ($contentType) {
-            case 'application/json':
-                $data = json_decode($request->getBody(), true);
-                break;
-
-            case 'application/x-www-form-urlencoded':
-                $data = $parseddata;
-                break;
-
-            case 'multipart/form-data':
-                $data = $_POST;
-                break;
-
-            default:
-                $responseStatus = [
-                    'status' => StatusCodeInterface::STATUS_UNSUPPORTED_MEDIA_TYPE,
-                    'message' => 'Unsupported content type: ' . $contentType
-                ];
-                return $this->render($responseStatus, $response);
-        }
-
-        // Validate required fields
-        $requiredFields = ['title', 'year', 'genre', 'director', 'actors', 'country'];
-        foreach ($requiredFields as $field) {
-            if (!isset($data[$field])) {
+            if ($jsonBody === null) {
                 $responseStatus = [
                     'status' => StatusCodeInterface::STATUS_BAD_REQUEST,
-                    'message' => 'Missing required field'
+                    'message' => 'Invalid JSON data'
                 ];
                 return $this->render($responseStatus, $response);
             }
+
+            // Validate and sanitize JSON data here
+            $title = filter_var($jsonBody['title'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+            $year = filter_var($jsonBody['year'], FILTER_SANITIZE_NUMBER_INT);
+            $genre = filter_var($jsonBody['genre'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+            $director = filter_var($jsonBody['director'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+            $actors = filter_var($jsonBody['actors'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+            $country = filter_var($jsonBody['country'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+            $released = filter_var($jsonBody['released'], FILTER_SANITIZE_SPECIAL_CHARS);
+            $runtime = filter_var($jsonBody['runtime'], FILTER_SANITIZE_SPECIAL_CHARS);
+            $poster = filter_var($jsonBody['poster'], FILTER_SANITIZE_STRING);
+            $imdb = filter_var($jsonBody['imdb'], FILTER_SANITIZE_NUMBER_FLOAT);
+            $type = filter_var($jsonBody['type'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+        } else {
+            $parsedBody = $request->getParsedBody();
+
+            $title = filter_var($parsedBody['title'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+            $year = filter_var($parsedBody['year'], FILTER_SANITIZE_NUMBER_INT);
+            $genre = filter_var($parsedBody['genre'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+            $director = filter_var($parsedBody['director'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+            $actors = filter_var($parsedBody['actors'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+            $country = filter_var($parsedBody['country'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
+            $released = filter_var($parsedBody['released'], FILTER_SANITIZE_SPECIAL_CHARS);
+            $runtime = filter_var($parsedBody['runtime'], FILTER_SANITIZE_SPECIAL_CHARS);
+            $poster = filter_var($parsedBody['poster'], FILTER_SANITIZE_STRING);
+            $imdb = filter_var($parsedBody['imdb'], FILTER_SANITIZE_NUMBER_FLOAT);
+            $type = filter_var($parsedBody['type'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
         }
-
-        $title = filter_var($data['title'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
-        $year = filter_var($data['year'], FILTER_SANITIZE_NUMBER_INT);
-        $genre = filter_var($data['genre'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
-        $director = filter_var($data['director'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
-        $actors = filter_var($data['actors'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
-        $country = filter_var($data['country'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING);
-
-        // Optional fields
-        $released = isset($data['released']) ? filter_var($data['released'], FILTER_SANITIZE_SPECIAL_CHARS) : null;
-        $runtime = isset($data['runtime']) ? filter_var($data['runtime'], FILTER_SANITIZE_SPECIAL_CHARS) : null;
-        $poster = isset($data['poster']) ? filter_var($data['poster'], FILTER_SANITIZE_STRING) : null;
-        $imdb = isset($data['imdb']) ? filter_var($data['imdb'], FILTER_SANITIZE_NUMBER_FLOAT) : null;
-        $type = isset($data['type']) ? filter_var($data['type'], FILTER_SANITIZE_SPECIAL_CHARS | FILTER_SANITIZE_STRING) : null;
-
-        
         $movies = new Movie($this->container);
         $inserted = $movies->insert([
             $title, $year, $released, $runtime, $genre, $director, $actors, $country, $poster, $imdb, $type
@@ -81,14 +68,13 @@ class MovieController extends A_Controller
                 'status' => StatusCodeInterface::STATUS_CREATED,
                 'message' => 'Movie added successfully'
             ];
-            return $this->render($responseStatus, $response);
         } else {
             $responseStatus = [
                 'status' => StatusCodeInterface::STATUS_INTERNAL_SERVER_ERROR,
                 'message' => 'Failed to add movie'
             ];
-            return $this->render($responseStatus, $response);
         }
+        return $this->render($responseStatus, $response);
     }
 
 
@@ -102,13 +88,13 @@ class MovieController extends A_Controller
         return ($response);
     }
 
-    function faker(Request $request, Response $response): Response
+    function faker(Request $Request, Response $response): Response
     {
         $movies = new Movie($this->container);
         $movies->fakeData($this->container);
         $responseData = [
             'status' => StatusCodeInterface::STATUS_OK,
-            'message' => 'Fake data generated successfully'
+            'message' => 'Fake p$parsedBody generated successfully'
         ];
 
         return $this->render($responseData, $response);
