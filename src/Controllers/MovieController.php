@@ -6,12 +6,33 @@ use MovieApi\Models\Movie;
 use Fig\Http\Message\StatusCodeInterface;
 use Slim\Psr7\Request;
 use Slim\Psr7\Response;
+use OpenApi\Annotations as OA;
 
 
-
+/**
+ * @OA\Info(
+ *     title="Movie API",
+ *     version="1.0.0"
+ * )
+ */
 class MovieController extends A_Controller
 {
 
+    /**
+     * @OA\Get(
+     *     path="/v1/movies",
+     *     tags={"Movies"},
+     *     summary="Get a list of all movies",
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/Movie")
+     *         )
+     *     )
+     * )
+     */
     public function indexAction(Request $request, Response $response): Response
     {
         $movies = new Movie($this->container);
@@ -19,6 +40,36 @@ class MovieController extends A_Controller
         return $this->render($parsedBody, $response);
     }
 
+    /**
+     * @OA\Get(
+     *     path="/v1/movies/{numberPerPage}",
+     *     tags={"Movies"},
+     *     summary="Get a list of movies with pagination",
+     *     @OA\Parameter(
+     *         name="numberPerPage",
+     *         in="path",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Parameter(
+     *         name="page",
+     *         in="query",
+     *         @OA\Schema(type="integer", default=1)
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/Movie")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Bad request"
+     *     )
+     * )
+     */
     public function paginateAction(Request $request, Response $response, $args = [])
     {
         $numberPerPage = $args['numberPerPage'];
@@ -32,6 +83,42 @@ class MovieController extends A_Controller
         return $this->render($parsedBody, $response);
     }
 
+    /**
+     * @OA\Get(
+     *     path="/v1/movies/{numberPerPage}/sort/{fieldToSort}",
+     *     tags={"Movies"},
+     *     summary="Get a list of movies sorted by a field",
+     *     @OA\Parameter(
+     *         name="numberPerPage",
+     *         in="path",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Parameter(
+     *         name="fieldToSort",
+     *         in="path",
+     *         required=true,
+     *         @OA\Schema(type="string")
+     *     ),
+     *     @OA\Parameter(
+     *         name="page",
+     *         in="query",
+     *         @OA\Schema(type="integer", default=1)
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/Movie")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Bad request"
+     *     )
+     * )
+     */
     public function sortAction(Request $request, Response $response, $args = [])
     {
         $numberPerPage = $args['numberPerPage'];
@@ -87,6 +174,28 @@ class MovieController extends A_Controller
         return $this->render($parsedBody, $response);
     }
 
+    /**
+     * @OA\Post(
+     *     path="/v1/movies",
+     *     tags={"Movies"},
+     *     summary="Create a new movie",
+     *     @OA\RequestBody(
+     *         @OA\JsonContent(ref="#/components/schemas/Movie")
+     *     ),
+     *     @OA\Response(
+     *         response=201,
+     *         description="Movie created successfully",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/Movie")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Bad request"
+     *     )
+     * )
+     */
     public function createAction(Request $request, Response $response): Response
     {
         if ($request->getHeaderLine('Content-Type') === 'application/json') {
@@ -146,7 +255,34 @@ class MovieController extends A_Controller
         return $this->render($responseStatus, $response);
     }
 
-
+    /**
+     * @OA\Put(
+     *     path="/v1/movies/{id}",
+     *     tags={"Movies"},
+     *     summary="Update a movie by ID",
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\RequestBody(
+     *         @OA\JsonContent(ref="#/components/schemas/Movie")
+     *     ),
+     *     @OA\Response(
+     *         response=201,
+     *         description="Movie updated successfully",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/Movie")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Bad request"
+     *     )
+     * )
+     */
     public function updateAction(Request $request, Response $response, $args = []): Response
     {
         if ($request->getHeaderLine('Content-Type') === 'application/json') {
@@ -208,6 +344,48 @@ class MovieController extends A_Controller
         return $this->render($responseStatus, $response);
     }
 
+    /**
+     * @OA\Patch(
+     *     path="/v1/movies/{id}",
+     *     tags={"Movies"},
+     *     summary="Partially update a movie by ID",
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\RequestBody(
+     *         @OA\JsonContent(
+     *             type="object",
+     *             @OA\Property(property="id", type="integer"),
+     *             @OA\Property(property="title", type="string"),
+     *             @OA\Property(property="year", type="string"),
+     *             @OA\Property(property="released", type="string"),
+     *             @OA\Property(property="runtime", type="string"),
+     *             @OA\Property(property="genre", type="string"),
+     *             @OA\Property(property="director", type="string"),
+     *             @OA\Property(property="actors", type="string"),
+     *             @OA\Property(property="country", type="string"),
+     *             @OA\Property(property="poster", type="string"),
+     *             @OA\Property(property="imdb", type="number", format="float"),
+     *             @OA\Property(property="type", type="string"),
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Movie partially updated successfully",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/Movie")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Bad request"
+     *     )
+     * )
+     */
     public function patchAction(Request $request, Response $response, $args = []): Response
     {
         $id = $args['id'];
@@ -331,6 +509,31 @@ class MovieController extends A_Controller
         return $this->render($responseStatus, $response);
     }
 
+    /**
+     * @OA\Delete(
+     *     path="/v1/movies/{id}",
+     *     tags={"Movies"},
+     *     summary="Delete a movie by ID",
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         required=true,
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Movie deleted successfully",
+     *         @OA\JsonContent(
+     *             type="array",
+     *             @OA\Items(ref="#/components/schemas/Movie")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Bad request"
+     *     )
+     * )
+     */
     public function deleteAction(Request $request, Response $response, $args = []): Response
     {
         $id = $args['id'];

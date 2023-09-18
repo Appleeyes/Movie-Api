@@ -13,6 +13,8 @@ use Slim\Middleware\MethodOverrideMiddleware;
 
 
 require __DIR__ . '/../vendor/autoload.php';
+
+
 $dotenv = Dotenv::createImmutable(__DIR__ . "/..");
 $dotenv->safeLoad();
 
@@ -38,6 +40,8 @@ $app->group('/v1', function (RouteCollectorProxy $group) {
     $group->patch('/movies/{id:[0-9]+}', '\MovieApi\Controllers\MovieController:patchAction');
     // $group->get('/movies/fake-data', '\MovieApi\Controllers\MovieController:faker');
 })->add(new MiddlewareBefore())->add(new MiddlewareAfter());
+$app->get('/v1/apidocs', '\MovieApi\Controllers\OpenAPIController:documentationAction');
+
 
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 

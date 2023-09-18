@@ -6,6 +6,25 @@ use DI\Container;
 use Faker\Factory;
 use Exception;
 
+/**
+ * @OA\Schema(
+ *     schema="Movie",
+ *     title="Movie",
+ *     description="Movie model",
+ *     @OA\Property(property="id", type="integer"),
+ *     @OA\Property(property="title", type="string"),
+ *     @OA\Property(property="year", type="integer"),
+ *     @OA\Property(property="released", type="string"),
+ *     @OA\Property(property="runtime", type="string"),
+ *     @OA\Property(property="genre", type="string"),
+ *     @OA\Property(property="director", type="string"),
+ *     @OA\Property(property="actors", type="string"),
+ *     @OA\Property(property="country", type="string"),
+ *     @OA\Property(property="poster", type="string"),
+ *     @OA\Property(property="imdb", type="float"),
+ *     @OA\Property(property="type", type="string"),
+ * )
+ */
 class Movie extends A_Model
 {
     public int $id;
