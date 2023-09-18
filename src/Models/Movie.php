@@ -50,6 +50,51 @@ class Movie extends A_Model
         }
     }
 
+    public function patch(array $data, int $id): bool
+    {
+        $values = [];
+        $setStatements = [];
+
+        $fieldNames = [
+            'title' => 'title',
+            'year' => 'year',
+            'released' => 'released',
+            'runtime' => 'runtime',
+            'genre' => 'genre',
+            'director' => 'director',
+            'actors' => 'actors',
+            'country' => 'country',
+            'poster' => 'poster',
+            'imdb' => 'imdb',
+            'type' => 'type',
+        ];
+
+        foreach ($fieldNames as $fieldName => $field) {
+            if (isset($data[$field])) {
+                $setStatements[] = "$field = ?";
+                $values[] = $data[$field];
+            }
+        }
+
+        $sql = "UPDATE " . $this->dbTableName . " SET " . implode(', ', $setStatements) . " WHERE id = ?";
+
+        $stm = $this->getPdo()->prepare($sql);
+
+        try {
+            // Bind the 'id' value to the statement.
+            $values[] = $id;
+
+            $result = $stm->execute($values);
+            return $result;
+        } catch (\PDOException $e) {
+            error_log("Database error: " . $e->getMessage());
+            throw $e;
+        }
+    }
+
+
+
+
     public function insert(array $data): bool
     {
         $sql = "INSERT INTO " . $this->dbTableName . " (title, year, released, runtime, genre, director, actors, country, poster, imdb, type) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
