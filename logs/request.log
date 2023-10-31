@@ -1,0 +1,577 @@
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["168"]}
+BODY: title=Lion+Tribe&year=2022&released=10+sept+2023&genre=Drama&director=Dorcs&actors=Apple%2C+Daniel%2C+Genie&country=Ghana&poster=nil&imdb=2.9&type=cinema&runtime=1+hour
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["168"]}
+BODY: title=Lion+Tribe&year=2022&released=10+sept+2023&genre=Drama&director=Dorcs&actors=Apple%2C+Daniel%2C+Genie&country=Ghana&poster=nil&imdb=2.9&type=cinema&runtime=1+hour
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["168"]}
+BODY: title=Lion+Tribe&year=2022&released=10+sept+2023&genre=Drama&director=Dorcs&actors=Apple%2C+Daniel%2C+Genie&country=Ghana&poster=nil&imdb=2.9&type=cinema&runtime=1+hour
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["168"]}
+BODY: title=Lion+Tribe&year=2022&released=10+sept+2023&genre=Drama&director=Dorcs&actors=Apple%2C+Daniel%2C+Genie&country=Ghana&poster=nil&imdb=2.9&type=cinema&runtime=1+hour
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["multipart\/form-data; boundary=X-INSOMNIA-BOUNDARY"],"Accept":["*\/*"],"Content-Length":["916"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["multipart\/form-data; boundary=X-INSOMNIA-BOUNDARY"],"Accept":["*\/*"],"Content-Length":["916"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/json"],"Accept":["*\/*"],"Content-Length":["235"]}
+BODY: {
+	"title": "Lion Tribe",
+	"year": 2023,
+	"released": "2012",
+	"runtime": "2 hours",
+	"genre": "comedy",
+	"director": "Apple",
+	"actors": "Apple, Daniel, Genie",
+	"country": "Nigeris",
+	"poster": "Nil",
+	"imdb": "Nil",
+	"type": "Nil"
+}
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/json"],"Accept":["*\/*"],"Content-Length":["235"]}
+BODY: {
+	"title": "Lion Tribe",
+	"year": 2023,
+	"released": "2012",
+	"runtime": "2 hours",
+	"genre": "comedy",
+	"director": "Apple",
+	"actors": "Apple, Daniel, Genie",
+	"country": "Nigeris",
+	"poster": "Nil",
+	"imdb": "Nil",
+	"type": "Nil"
+}
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/json"],"Accept":["*\/*"],"Content-Length":["238"]}
+BODY: {
+	"title": "Ancient Tribe",
+	"year": 2023,
+	"released": "2012",
+	"runtime": "2 hours",
+	"genre": "comedy",
+	"director": "Apple",
+	"actors": "Apple, Daniel, Genie",
+	"country": "Nigeris",
+	"poster": "Nil",
+	"imdb": "Nil",
+	"type": "Nil"
+}
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/json"],"Accept":["*\/*"],"Content-Length":["238"]}
+BODY: {
+	"title": "Ancient Tribe",
+	"year": 2023,
+	"released": "2012",
+	"runtime": "2 hours",
+	"genre": "comedy",
+	"director": "Apple",
+	"actors": "Apple, Daniel, Genie",
+	"country": "Nigeris",
+	"poster": "Nil",
+	"imdb": "Nil",
+	"type": "Nil"
+}
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/json"],"Accept":["*\/*"],"Content-Length":["238"]}
+BODY: {
+	"title": "Ancient Tribe",
+	"year": 2023,
+	"released": "2012",
+	"runtime": "2 hours",
+	"genre": "comedy",
+	"director": "Apple",
+	"actors": "Apple, Daniel, Genie",
+	"country": "Nigeris",
+	"poster": "Nil",
+	"imdb": "Nil",
+	"type": "Nil"
+}
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/json"],"Accept":["*\/*"],"Content-Length":["238"]}
+BODY: {
+	"title": "Ancient Tribe",
+	"year": 2023,
+	"released": "2012",
+	"runtime": "2 hours",
+	"genre": "comedy",
+	"director": "Apple",
+	"actors": "Apple, Daniel, Genie",
+	"country": "Nigeris",
+	"poster": "Nil",
+	"imdb": "Nil",
+	"type": "Nil"
+}
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["26"]}
+BODY: title=Lion+Tribe&year=2023
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["26"]}
+BODY: title=Lion+Tribe&year=2023
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["26"]}
+BODY: title=Lion+Tribe&year=2023
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["26"]}
+BODY: title=Lion+Tribe&year=2023
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["26"]}
+BODY: title=Lion+Tribe&year=2023
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["152"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&director=Apple&actors=Dan%2C+Dav&country=Ghana&poster=nil&imdb=nil&type=nil
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["152"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&director=Apple&actors=Dan%2C+Dav&country=Ghana&poster=nil&imdb=nil&type=nil
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["152"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&director=Apple&actors=Dan%2C+Dav&country=Ghana&poster=nil&imdb=nil&type=nil
+
+
+URI: http://localhost:3000/v1/movies/217
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["152"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&director=Apple&actors=Dan%2C+Dav&country=Ghana&poster=nil&imdb=nil&type=nil
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies/218
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["152"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&director=Apple&actors=Dan%2C+Dav&country=Ghana&poster=nil&imdb=nil&type=nil
+
+
+URI: http://localhost:3000/v1/movies/218
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["152"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&director=Apple&actors=Dan%2C+Dav&country=Ghana&poster=nil&imdb=nil&type=nil
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/219
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/200
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/200
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/200
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/200
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/200
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/200
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["76"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy
+
+
+URI: http://localhost:3000/v1/movies/200
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/200
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/200
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/200
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/221
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"Cache-Control":["max-age=0"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/3
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/3
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/title
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/title
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/title
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/year
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/year
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/genre
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/genre
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/genre
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/genre
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/poster
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/10/sort/poster
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2/sort/title
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/movies/2/sort/title
+HEADERS: {"Host":["localhost"],"User-Agent":["insomnia\/2023.5.8"],"Content-Type":["application\/x-www-form-urlencoded"],"Accept":["*\/*"],"Content-Length":["83"]}
+BODY: title=Lion+Tribe&year=2023&released=2+june+2023&runtime=1+hour&genre=comendy&id=200
+
+
+URI: http://localhost:3000/v1/apidocs
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"Accept":["application\/json,*\/*"],"DNT":["1"],"sec-ch-ua-mobile":["?0"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"sec-ch-ua-platform":["\"Windows\""],"Sec-Fetch-Site":["same-origin"],"Sec-Fetch-Mode":["cors"],"Sec-Fetch-Dest":["empty"],"Referer":["http:\/\/localhost:3000\/docs\/"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
+URI: http://localhost:3000/v1/apidocs
+HEADERS: {"Host":["localhost"],"Connection":["keep-alive"],"sec-ch-ua":["\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\""],"sec-ch-ua-mobile":["?0"],"sec-ch-ua-platform":["\"Windows\""],"DNT":["1"],"Upgrade-Insecure-Requests":["1"],"User-Agent":["Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/116.0.0.0 Safari\/537.36"],"Accept":["text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7"],"Sec-Fetch-Site":["none"],"Sec-Fetch-Mode":["navigate"],"Sec-Fetch-User":["?1"],"Sec-Fetch-Dest":["document"],"Accept-Encoding":["gzip, deflate, br"],"Accept-Language":["en-US,en;q=0.9"],"Cookie":["amp_6e403e=FEn2CrG7iYVijdYIlLEOfV...1hajnkhj9.1hajotij3.0.0.0"]}
+BODY: 
+
+
